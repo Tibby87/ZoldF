@@ -1,0 +1,23 @@
+.palyazat_cim {
+  color: var(--lght-blue-gray);
+  max-width: 1200px;
+  margin: 0 auto 3em;
+}
+
+.palyazat_fotok {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+@media screen and (min-width: 800px) {
+  .palyazat_fotok {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  p {
+    font-size: 130%;
+  }
+}

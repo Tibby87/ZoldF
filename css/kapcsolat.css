@@ -1,0 +1,64 @@
+.elerhetoseg {
+  display: flex;
+  gap: 1em;
+  flex-direction: column-reverse;
+}
+
+.contact_img {
+  width: 25rem;
+}
+.img-1 {
+  border: 6px solid gainsboro;
+}
+.main_text-content {
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 12px 30px;
+}
+.main_text-row {
+}
+
+.main_text-data {
+  /* text-align: justify; */
+  font-family: var(--font-content);
+  font-weight: bold;
+  color: var(--lght-blue-gray);
+  font-size: 1.1rem;
+  /* margin: auto; */
+}
+
+.map_box {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.map_button:link,
+.map_button:visited {
+  display: block;
+  /* background-color: rgb(96, 77, 133); */
+  color: var(--lght-blue-gray);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  /* box-shadow: 2px 2px lightgray; */
+  padding: 0.5em 0.8em;
+  /* border-radius: 50px; */
+}
+
+.map_button:hover {
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 800px) {
+  .elerhetoseg {
+    flex-direction: row;
+  }
+  .main_text-content {
+    position: relative;
+    bottom: 8rem;
+  }
+  .map_box {
+    flex-direction: row;
+  }
+}

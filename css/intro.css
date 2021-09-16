@@ -1,0 +1,99 @@
+main {
+  max-width: 850px;
+  margin: auto;
+}
+
+.intro_box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 3em;
+}
+/* Bemutatkozo Szoveg */
+.intro_text {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.intro_text-title1,
+.intro_text-title2 {
+  color: var(--drk-blue-gray);
+}
+
+.intro_text-content {
+  line-height: 1.5em;
+  text-align: justify;
+  max-width: 900px;
+}
+
+/* Impresszum styling */
+.company_info {
+  background-color: var(--logo-primary);
+  /* padding: 0 0.8em; */
+}
+
+.company_info-content {
+  border-collapse: separate;
+  border-spacing: 15px 30px;
+}
+.company_info-data {
+  font-family: var(--font-content);
+  font-weight: bold;
+  color: var(--lght-blue-gray);
+  font-size: 1.1rem;
+}
+
+.truck_text {
+  color: var(--lght-blue-gray);
+}
+/* Palyazatok Gomb */
+.app_button:link,
+.app_button:visited {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: larger;
+  /* color: rgb(165, 241, 11); */
+  color: white;
+  background-color: var(--logo-primary);
+  text-decoration: none;
+  width: max-content;
+  margin: 1em auto 0;
+  padding: 0.6em 1em;
+  border-radius: 100px;
+  /* text-shadow: 2px 2px white; */
+  box-shadow: 2px 2px lightgray;
+}
+
+/*  */
+@media screen and (min-width: 800px) {
+  .company_info-content {
+    text-align: justify;
+  }
+
+  .app_button:hover {
+    color: var(--logo-secondary);
+  }
+}
+@media screen and (min-width: 1800px) {
+  main {
+    max-width: 2000px;
+    margin: auto;
+  }
+  .intro_box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .intro_text-content {
+    font-size: large;
+  }
+  .col {
+    max-width: 45%;
+    margin: auto;
+  }
+  .app_button:link,
+  .app_button:visited {
+    font-size: 1.7em;
+  }
+}

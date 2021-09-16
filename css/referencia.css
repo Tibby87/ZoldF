@@ -1,0 +1,100 @@
+.main,
+.ref {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.ref_heading {
+  color: var(--lght-blue-gray);
+}
+
+.ref {
+  color: var(--lght-blue-gray);
+  text-shadow: 2px 2px rgba(255, 255, 224, 0.363);
+}
+
+.ref_cim {
+  margin-bottom: 10px;
+  border-top: 3px solid var(--logo-primary);
+  border-bottom: 3px solid var(--logo-primary);
+  width: fit-content;
+  margin: auto;
+}
+
+.ref_img {
+  border-radius: 25px;
+}
+
+/* Céges Megrendelések */
+/* .ceges_main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  text-align: center;
+} */
+.ceges_title {
+  color: var(--lght-blue-gray);
+  margin-bottom: 1em;
+}
+
+.munkak {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  text-align: justify;
+  margin-bottom: 2.5em;
+}
+
+.munka_nev {
+  margin-bottom: 0.4em;
+  line-height: 1.6em;
+  color: var(--lght-blue-gray);
+  text-decoration: 2px underline var(--logo-primary);
+  text-underline-offset: 6px;
+}
+
+.munka_leiras {
+  line-height: 1.5em;
+  color: var(--lght-blue-gray);
+  font-weight: bold;
+}
+
+.ceges_fotok {
+  padding: 2em auto;
+}
+.ceges_fotok-cim {
+  margin-bottom: 1.5em;
+  color: var(--lght-blue-gray);
+}
+
+@media screen and (min-width: 800px) {
+  .ref {
+    flex-direction: unset;
+  }
+
+  .ceges_title {
+    margin-bottom: 2em;
+  }
+
+  .ceges_kep {
+    max-width: 40%;
+  }
+  .munkak {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto 2.5em;
+  }
+
+  .munka {
+    line-break: loose;
+    width: 40%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .ceges_kep {
+    max-width: 100%;
+  }
+}
