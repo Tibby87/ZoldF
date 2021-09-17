@@ -1,0 +1,46 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.szolg_cim {
+  color: var(--lght-blue-gray);
+}
+
+.szolg {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.szolg_item {
+  border-top: 1px solid gainsboro;
+  /* border-left: 1px solid gainsboro;
+  border-right: 1px solid gainsboro; */
+
+  border-radius: 5px;
+  border-bottom: 0;
+  box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.szolg_nev {
+  color: var(--drk-blue-gray);
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+/* .szolg_kep {
+} */
+
+@media screen and (min-width: 800px) {
+  .szolg {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5em;
+  }
+  .szolg_item {
+    max-width: 30%;
+  }
+}
