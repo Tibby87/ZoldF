@@ -9,9 +9,14 @@
   color: var(--lght-blue-gray);
 }
 
-.ref {
+/* .ref {
+} */
+
+.ref_gomb:link,
+.ref_gomb:visited {
+  text-decoration: none;
   color: var(--lght-blue-gray);
-  text-shadow: 2px 2px rgba(255, 255, 224, 0.363);
+  /* text-shadow: 2px 2px rgba(255, 255, 224, 0.363); */
 }
 
 .ref_cim {

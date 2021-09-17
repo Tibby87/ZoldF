@@ -4,11 +4,21 @@
   flex-direction: column-reverse;
 }
 
+.contact_images {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 .contact_img {
-  width: 25rem;
+  width: 26rem;
 }
 .img-1 {
   border: 6px solid gainsboro;
+}
+
+.title_h2 {
+  color: var(--lght-blue-gray);
 }
 .main_text-content {
   margin: auto;
@@ -16,6 +26,7 @@
   border-spacing: 12px 30px;
 }
 .main_text-row {
+  text-align: justify;
 }
 
 .main_text-data {
@@ -39,6 +50,7 @@
   /* background-color: rgb(96, 77, 133); */
   color: var(--lght-blue-gray);
   font-weight: bold;
+  font-size: large;
   text-decoration: none;
   cursor: pointer;
   /* box-shadow: 2px 2px lightgray; */
@@ -54,10 +66,10 @@
   .elerhetoseg {
     flex-direction: row;
   }
-  .main_text-content {
+  /* .main_text-content {
     position: relative;
     bottom: 8rem;
-  }
+  } */
   .map_box {
     flex-direction: row;
   }
