@@ -15,16 +15,25 @@
 .ref_gomb:link,
 .ref_gomb:visited {
   text-decoration: none;
-  color: var(--lght-blue-gray);
+  color: white;
+  background-color: var(--logo-primary2);
+  text-decoration: none;
+  width: max-content;
+  margin: 1em auto 0;
+  padding: 0.6em 1em;
+  border-radius: 100px;
+  /* text-shadow: 2px 2px white; */
+  box-shadow: 2px 2px lightgray;
+  /* margin-bottom: 10px; */
   /* text-shadow: 2px 2px rgba(255, 255, 224, 0.363); */
 }
 
 .ref_cim {
-  margin-bottom: 10px;
-  border-top: 3px solid var(--logo-primary);
+  margin-bottom: 15px;
+  /*border-top: 3px solid var(--logo-primary);
   border-bottom: 3px solid var(--logo-primary);
   width: fit-content;
-  margin: auto;
+  margin: auto; */
 }
 
 .ref_img {
@@ -76,6 +85,10 @@
 @media screen and (min-width: 800px) {
   .ref {
     flex-direction: unset;
+  }
+
+  .ref_gomb:hover {
+    color: var(--logo-secondary);
   }
 
   .ceges_title {

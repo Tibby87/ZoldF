@@ -1,13 +1,13 @@
 .elerhetoseg {
   display: flex;
-  gap: 1em;
+  gap: 2em;
   flex-direction: column-reverse;
 }
 
 .contact_images {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1.2em;
 }
 
 .contact_img {
