@@ -44,6 +44,11 @@
   gap: 1em;
 }
 
+.map_button {
+  width: fit-content;
+  margin: 0 auto 10px;
+}
+
 .map_button:link,
 .map_button:visited {
   display: block;
@@ -54,12 +59,7 @@
   text-decoration: none;
   cursor: pointer;
   /* box-shadow: 2px 2px lightgray; */
-  padding: 0.5em 0.8em;
   /* border-radius: 50px; */
-}
-
-.map_button:hover {
-  opacity: 0.9;
 }
 
 @media screen and (min-width: 800px) {
@@ -72,5 +72,10 @@
   } */
   .map_box {
     flex-direction: row;
+  }
+
+  .map_button:hover {
+    opacity: 0.8;
+    text-decoration: underline;
   }
 }
